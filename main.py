@@ -13,7 +13,8 @@ class Client(Resource):
         try:
             return next(filter(lambda x: x['client']['name'] == client_name.upper(), clients))
         except StopIteration:
-            return dict()
+            return dict(), 404
+
 
 api.add_resource(Client, "/client/<string:client_name>")
 
