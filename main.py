@@ -10,9 +10,10 @@ class Client(Resource):
     def get(self, client_name):
         with open('client.json') as clients_file:
             clients = json.load(clients_file)
-            result = list(filter(lambda x: x['client']['name'] == client_name.upper(), clients))
-        return result[0]
-
+        try:
+            return next(filter(lambda x: x['client']['name'] == client_name.upper(), clients))
+        except StopIteration:
+            return dict()
 
 api.add_resource(Client, "/client/<string:client_name>")
 
