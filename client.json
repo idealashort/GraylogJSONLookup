@@ -1,0 +1,17 @@
+{
+    "HBR": {
+        "windows_security": "hbr_security_stream_id",
+        "windows_event": "hbr_event_stream_id",
+        "palo": "hbr_palo_stream_id"
+    },
+    "DMC": {
+        "windows_security": "dmc_security_stream_id",
+        "windows_event": "dmc_event_stream_id",
+        "palo": "dmc_palo_stream_id"
+    },
+    "SEN": {
+        "windows_security": "sen_security_stream_id",
+        "windows_event": "sen_event_stream_id",
+        "palo": "sen_palo_stream_id"
+    }
+}
