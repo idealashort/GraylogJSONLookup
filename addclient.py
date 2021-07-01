@@ -4,7 +4,7 @@ import json
 def add_client(name, windows_security, windows_event, palo):
     new_client = {
         "client": {
-            "name": name,
+            "name": name.upper(),
             "streams": {
                 "windows_security": windows_security,
                 "windows_event": windows_event,
@@ -14,6 +14,8 @@ def add_client(name, windows_security, windows_event, palo):
     }
     with open('client.json', "r+") as c:
         clients = json.load(c)
+        if next(filter(lambda x: x['client']['name'] == name.upper(), clients), None):
+            return {"message": "This client already exists"}
         clients.append(new_client)
         c.seek(0)
         json.dump(clients, c)

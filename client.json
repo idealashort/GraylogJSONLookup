@@ -11,7 +11,7 @@
   },
   {
     "client": {
-      "name": "test",
+      "name": "TEST",
       "streams": {
         "windows_security": "asdf",
         "windows_event": "asdf",
