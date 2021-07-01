@@ -7,8 +7,8 @@ app = Flask(__name__)
 api = Api(app)
 client_put_args = reqparse.RequestParser()
 client_put_args.add_argument("windows_security", type=str,
-                             help="Stream ID of the Client's Windows Security Events Stream")
-client_put_args.add_argument("windows_event", type=str, help="Stream ID of the Client's Windows Events Stream")
+                             help="Stream ID of the Client's Windows Security Events Stream", Required=True)
+client_put_args.add_argument("windows_event", type=str, help="Stream ID of the Client's Windows Events Stream", Required=True)
 client_put_args.add_argument("palo", type=str, help="Stream ID of the Client's Palo Alto Stream")
 
 
