@@ -1,46 +1,6 @@
 [
   {
     "client": {
-      "name": "HBR",
-      "streams": {
-        "windows_security": "hbr_security_stream_id",
-        "windows_event": "hbr_event_stream_id",
-        "palo": "hbr_palo_stream_id"
-      }
-    }
-  },
-  {
-    "client": {
-      "name": "DMC",
-      "streams": {
-        "windows_security": "dmc_security_stream_id",
-        "windows_event": "dmc_event_stream_id",
-        "palo": "dmc_palo_stream_id"
-      }
-    }
-  },
-  {
-    "client": {
-      "name": "SEN",
-      "streams": {
-        "windows_security": "sen_security_stream_id",
-        "windows_event": "sen_event_stream_id",
-        "palo": "sen_palo_stream_id"
-      }
-    }
-  },
-  {
-    "client": {
-      "name": "BRWB",
-      "streams": {
-        "windows_security": "brwb_security_stream_id",
-        "windows_event": "brwb_event_stream_id",
-        "palo": "brwb_palo_stream_id"
-      }
-    }
-  },
-  {
-    "client": {
       "name": "CLIENTA",
       "streams": {
         "windows_security": "clienta_security_stream_id",
