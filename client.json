@@ -38,5 +38,25 @@
         "palo": "brwb_palo_stream_id"
       }
     }
+  },
+  {
+    "client": {
+      "name": "CLIENTA",
+      "streams": {
+        "windows_security": "clienta_security_stream_id",
+        "windows_event": "clienta_event_stream_id",
+        "palo": "clienta_palo_stream_id"
+      }
+    }
+  },
+  {
+    "client": {
+      "name": "test",
+      "streams": {
+        "windows_security": "asdf",
+        "windows_event": "asdf",
+        "palo": "asdf"
+      }
+    }
   }
 ]
