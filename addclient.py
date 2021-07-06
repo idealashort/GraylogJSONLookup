@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import json
 
 
@@ -5,7 +6,7 @@ def add_client(name, windows_security, windows_event, palo, node_id):
     new_client = {
         "client": {
             "name": name.upper(),
-            "node_id": node_id,
+            "node_id": node_id.upper(),
             "streams": {
                 "windows_security": windows_security,
                 "windows_event": windows_event,

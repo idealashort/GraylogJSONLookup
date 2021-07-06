@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 from flask import Flask
 from flask_restful import Api, Resource, reqparse
 import json
@@ -18,7 +19,7 @@ class Client(Resource):
         with open('client.json') as clients_file:
             clients = json.load(clients_file)
         try:
-            return next(filter(lambda x: x['client']['name'] == client_name.upper(), clients))
+            return next(filter(lambda x: x['client']['node_id'] == client_name.upper(), clients))
         except StopIteration:
             return dict(), 404
 
