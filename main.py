@@ -10,6 +10,7 @@ client_put_args.add_argument("windows_security", type=str,
                              help="Stream ID of the Client's Windows Security Events Stream", required=True)
 client_put_args.add_argument("windows_event", type=str, help="Stream ID of the Client's Windows Events Stream", required=True)
 client_put_args.add_argument("palo", type=str, help="Stream ID of the Client's Palo Alto Stream")
+client_put_args.add_argument("node_id", type=str, help="The ID of the client forwarder", required=True)
 
 
 class Client(Resource):

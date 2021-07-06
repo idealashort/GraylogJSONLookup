@@ -2,6 +2,7 @@
   {
     "client": {
       "name": "CLIENTA",
+      "node_id": "clienta_node_id",
       "streams": {
         "windows_security": "clienta_security_stream_id",
         "windows_event": "clienta_event_stream_id",
@@ -12,6 +13,7 @@
   {
     "client": {
       "name": "TEST",
+      "node_id": "test_node_id",
       "streams": {
         "windows_security": "asdf",
         "windows_event": "asdf",
