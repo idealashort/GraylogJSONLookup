@@ -16,11 +16,11 @@ client_put_args.add_argument("node_id", type=str, help="The ID of the client for
 
 
 class Node(Resource):
-    def get(self, node_id):
+    def get(self, client_name):
         with open('client.json') as clients_file:
             clients = json.load(clients_file)
         try:
-            return next(filter(lambda x: x['client']['node_id'] == node_id.upper(), clients))
+            return next(filter(lambda x: x['client']['node_id'] == client_name.upper(), clients))
         except StopIteration:
             return dict(), 404
 
@@ -39,7 +39,7 @@ class Client(Resource):
             return dict(), 404
 
 
-api.add_resource(Node, "/client/<string:node_id>")
+api.add_resource(Node, "/client/<string:client_name>")
 api.add_resource(Client, "/client/name/<string:client_name>")
 
 if __name__ == '__main__':

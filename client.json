@@ -20,5 +20,16 @@
         "palo": "asdf"
       }
     }
+  },
+  {
+    "client": {
+      "name": "TESTCLIENT",
+      "node_id": "A1B2C3",
+      "streams": {
+        "windows_security": "test_stream",
+        "windows_event": "test_stream",
+        "palo": "test_stream"
+      }
+    }
   }
 ]
