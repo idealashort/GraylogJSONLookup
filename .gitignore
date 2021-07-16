@@ -1,3 +1,5 @@
 .idea/
 /shelf/
 /workspace.xml
+requirements.txt
+venv/
